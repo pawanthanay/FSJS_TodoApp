@@ -23,6 +23,7 @@ export const Todos = () => {
     submitData();
     // But Empty the previous Details
     setTodo("");
+    
   };
 
   return (
@@ -31,7 +32,7 @@ export const Todos = () => {
         <section className="text-gray-600 body-font relative">
             <div className="container px-5 py-8 mx-auto">
                 <div className="flex flex-col text-center w-full mb-6">
-                    <h1 className="sm:text-3xl text-2xl font-bold title-font text-indigo-400">
+                    <h1 className="sm:text-3xl text-2xl font-bold title-font text-indigo-600">
                         My Todo
                     </h1>
                 </div>
@@ -47,11 +48,12 @@ export const Todos = () => {
                       onChange={(event) => setTodo(event.target.value)}
                     />
                     <div className="w-0.10/5 ml-4">
-                    <button
+                      <button
                         type="submit"
                         className="flex mx-auto text-white bg-indigo-400 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                         Add
-                        </button>
+                      </button>
+                      
                     </div>
                     
                 </div>
